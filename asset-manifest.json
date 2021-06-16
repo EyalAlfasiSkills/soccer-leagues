@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/soccer-leagues/static/css/main.1dbcf28d.chunk.css",
+    "main.js": "/soccer-leagues/static/js/main.b193c43e.chunk.js",
+    "main.js.map": "/soccer-leagues/static/js/main.b193c43e.chunk.js.map",
+    "runtime-main.js": "/soccer-leagues/static/js/runtime-main.2361a586.js",
+    "runtime-main.js.map": "/soccer-leagues/static/js/runtime-main.2361a586.js.map",
+    "static/js/2.ac2071e9.chunk.js": "/soccer-leagues/static/js/2.ac2071e9.chunk.js",
+    "static/js/2.ac2071e9.chunk.js.map": "/soccer-leagues/static/js/2.ac2071e9.chunk.js.map",
+    "static/js/3.6baf8fa7.chunk.js": "/soccer-leagues/static/js/3.6baf8fa7.chunk.js",
+    "static/js/3.6baf8fa7.chunk.js.map": "/soccer-leagues/static/js/3.6baf8fa7.chunk.js.map",
+    "index.html": "/soccer-leagues/index.html",
+    "static/css/main.1dbcf28d.chunk.css.map": "/soccer-leagues/static/css/main.1dbcf28d.chunk.css.map",
+    "static/js/2.ac2071e9.chunk.js.LICENSE.txt": "/soccer-leagues/static/js/2.ac2071e9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2361a586.js",
+    "static/js/2.ac2071e9.chunk.js",
+    "static/css/main.1dbcf28d.chunk.css",
+    "static/js/main.b193c43e.chunk.js"
+  ]
+}
