@@ -1,0 +1,23 @@
+.team-preview-wrapper {
+  flex-basis: 250px;
+  background-color: $lightgrey;
+  margin: 10px;
+  border-radius: 4px;
+
+  & .crest-container {
+    padding: 10px;
+    & img {
+      max-width: 60px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  & .content {
+    padding: 10px;
+    & .team-name {
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
+  }
+}
