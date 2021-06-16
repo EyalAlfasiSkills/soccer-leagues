@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const TeamPreview = ({ team }) => {
-    console.log(team);
+
     return (
         <div className="team-preview-wrapper">
             <div className="crest-container ">

@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://api.football-data.org/v2/competitions";
+const BASE_URL = "https://api.football-data.org/v2/competitions";
 const API_TOKEN =
     "7c2e877f828d407891fd9ed1a0b1cd01";
 
@@ -19,9 +19,7 @@ async function queryLeagues() {
         return league
     })
 
-    console.log(leagues);
     const leaguesDetails = await Promise.all(leagues)
-    console.log(leaguesDetails);
     return leaguesDetails.map((league) => {
 
         const { id, name } = league.data;
@@ -40,7 +38,6 @@ async function queryTeams(id) {
         headers: { 'X-Auth-Token': API_TOKEN },
 
     });
-    console.log(data);
     return data.data.teams.map(team => {
         const { id, name, crestUrl } = team
         return {

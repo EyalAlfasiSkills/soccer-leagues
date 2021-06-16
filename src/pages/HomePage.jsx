@@ -10,7 +10,6 @@ export const HomePage = () => {
 
     const initializeLeagues = async () => {
         const leagues = await soccerService.queryLeagues();
-        console.log(leagues);
         setleagues(leagues);
         setCurrentCountryId(leagues[0].id)
     };
@@ -25,7 +24,6 @@ export const HomePage = () => {
 
     const fetchTeams = async () => {
         const teams = await soccerService.queryTeams(currentCountryId);
-        console.log(teams);
         setTeams(teams);
     };
 
