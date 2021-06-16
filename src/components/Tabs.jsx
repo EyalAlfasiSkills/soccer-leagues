@@ -3,8 +3,8 @@ import React from "react";
 export const Tabs = ({ leagues, onPickLeague, currentCountryId }) => {
 
     return (
-        <div className="tabs-wrapper flex justify-center align-center">
-            <ul className="flex justify-center">
+        <div className="tabs-wrapper flex align-center">
+            <ul className="flex">
                 {leagues &&
                     leagues.map((league) => {
                         return (

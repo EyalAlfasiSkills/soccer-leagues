@@ -1,5 +1,17 @@
+@mixin for-mobile-down {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
 @mixin for-mobile-up {
   @media (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-down {
+  @media (min-width: 768px) {
     @content;
   }
 }
@@ -13,5 +25,27 @@
 @mixin for-desktop-up {
   @media (min-width: 1024px) {
     @content;
+  }
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
   }
 }

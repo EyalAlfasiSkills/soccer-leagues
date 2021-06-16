@@ -1,13 +1,24 @@
 .tabs-wrapper {
   background-color: $lightgrey;
   min-height: 100px;
+  overflow-x: auto;
+  padding: 1rem;
+  @include scrollbars(8px, $primary);
+  @include for-tablet-up {
+    justify-content: center;
+  }
   & ul {
     & li.tab {
       color: $primary;
       padding: 5px;
       cursor: pointer;
-      font-size: 1.2rem;
+      font-size: 1rem;
+      white-space: nowrap;
+      @include for-tablet-up {
+        font-size: 1.2rem;
+      }
       position: relative;
+      // white-space: nowrap;
 
       &::after {
         @extend .fancy-underline;
