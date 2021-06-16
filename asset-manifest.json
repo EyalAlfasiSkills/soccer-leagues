@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/soccer-leagues/static/css/main.1dbcf28d.chunk.css",
-    "main.js": "/soccer-leagues/static/js/main.98245032.chunk.js",
-    "main.js.map": "/soccer-leagues/static/js/main.98245032.chunk.js.map",
+    "main.js": "/soccer-leagues/static/js/main.202daae2.chunk.js",
+    "main.js.map": "/soccer-leagues/static/js/main.202daae2.chunk.js.map",
     "runtime-main.js": "/soccer-leagues/static/js/runtime-main.2361a586.js",
     "runtime-main.js.map": "/soccer-leagues/static/js/runtime-main.2361a586.js.map",
     "static/js/2.ac2071e9.chunk.js": "/soccer-leagues/static/js/2.ac2071e9.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2361a586.js",
     "static/js/2.ac2071e9.chunk.js",
     "static/css/main.1dbcf28d.chunk.css",
-    "static/js/main.98245032.chunk.js"
+    "static/js/main.202daae2.chunk.js"
   ]
 }
