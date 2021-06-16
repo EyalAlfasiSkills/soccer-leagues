@@ -1,6 +1,13 @@
 //base
 @import "./base/_base.scss";
+@import "./base/helpers.scss";
+@import "./base/mixins.scss";
+@import "./base/variables.scss";
+
+//decorations
+@import "./base/decorations.scss";
 
 //pages
 
 //components
+@import "./components/Tabs.scss";

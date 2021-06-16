@@ -1,0 +1,8 @@
+.fancy-underline {
+  transition: width 0.2s ease;
+  height: 3px;
+  background-color: $primary;
+  bottom: -5px;
+  width: 100%;
+  left: 0;
+}

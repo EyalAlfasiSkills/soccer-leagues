@@ -4,22 +4,45 @@ import { TeamsList } from "../components/TeamsList";
 import { soccerService } from "../services/soccerService";
 
 export const HomePage = () => {
-  const [leagues, setleagues] = useState(null);
-  const [currentLeague, setCurrentLeague] = useState(null);
+    const [leagues, setleagues] = useState(null);
+    const [currentCountryId, setCurrentCountryId] = useState(null);
+    const [teams, setTeams] = useState(null);
 
-  const initializeLeagues = async () => {
-    const leagues = await soccerService.query();
-    setleagues(leagues)
-  };
+    const initializeLeagues = async () => {
+        const leagues = await soccerService.queryLeagues();
+        console.log(leagues);
+        setleagues(leagues);
+        setCurrentCountryId(leagues[0].id)
+    };
 
-  useEffect(() => {
-    initializeLeagues();
-  }, []);
+    const onPickLeague = (countryId) => {
+        setCurrentCountryId(countryId);
+    };
 
-  return (
-    <div className="home-page-wrapper">
-      <Tabs leagues={leagues} />
-      <TeamsList leagues={leagues} />
-    </div>
-  );
+    useEffect(() => {
+        initializeLeagues();
+    }, []);
+
+    const fetchTeams = async () => {
+        const teams = await soccerService.queryTeams(currentCountryId);
+        console.log(teams);
+        setTeams(teams);
+    };
+
+    useEffect(() => {
+        if (currentCountryId) {
+            fetchTeams(currentCountryId);
+        }
+    }, [currentCountryId]);
+
+    return (
+        <div className="home-page-wrapper">
+            <Tabs
+                leagues={leagues}
+                onPickLeague={onPickLeague}
+                currentCountryId={currentCountryId}
+            />
+            <TeamsList teams={teams} />
+        </div>
+    );
 };
